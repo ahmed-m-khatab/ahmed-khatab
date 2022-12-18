@@ -38,7 +38,7 @@
                 >
                   <v-text-field
                   v-model="name"
-                  :rules="nameRules"
+                  :rules="requiredRule"
                   label="Name"
                   required
                   outlined
@@ -58,7 +58,7 @@
 
                   <v-textarea
                   v-model="message"
-                  :rules="[v => !!v || 'Message is required!']"
+                  :rules="requiredRule"
                   name="input-5-2"
                   label="Message"
                   outlined
@@ -82,9 +82,8 @@ export default {
     data: () => ({
       valid: true,
       name: '',
-      nameRules: [
-        v => !!v || 'Name is required',
-        v => (v && v.length <= 10) || 'Name must be less than 10 characters',
+      requiredRule: [
+        v => !!v || 'Name is required'
       ],
       email: '',
       emailRules: [
