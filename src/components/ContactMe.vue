@@ -11,7 +11,7 @@
           <v-btn icon color="white" v-bind="attrs" @click="snackbar = false"><v-icon>mdi-close</v-icon></v-btn>
         </template>
       </v-snackbar>
-        <div id="contact">
+        <div id="contact" data-aos="zoom-in">
           <v-row justify="center" align="center" class="px-1">
             <v-col cols="12" md="4" class="white--text" :class="$vuetify.breakpoint.smAndDown ? 'text-center' : 'text-left'">
               <h1>

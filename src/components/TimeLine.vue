@@ -1,5 +1,6 @@
 <template>
     <v-timeline
+    data-aos="zoom-in"
     align-top
     :dense="$vuetify.breakpoint.smAndDown"
     >

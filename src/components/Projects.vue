@@ -1,6 +1,6 @@
 <template>
     <v-row class="ma-5">
-        <v-col v-for="item in projects" :key="item.name" md="4">
+        <v-col data-aos="zoom-in" v-for="item in projects" :key="item.name" md="4">
             <a :href="item.link" target="_balnk">
                 <v-card>
                     <v-img

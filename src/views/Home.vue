@@ -27,7 +27,7 @@
       </section>
       
       <!-- work experience -->
-      <section id="experience" :class="$vuetify.breakpoint.smAndDown ? 'px-0' : 'px-10'">
+      <section data-aos="fade-in" id="experience" :class="$vuetify.breakpoint.smAndDown ? 'px-0' : 'px-10'">
         <h3 class="complementary white--text py-5 w-50 mx-auto text-center mt-10">Work Experience</h3>
         <TimeLine :items="work" /> 
       </section>
