@@ -32,10 +32,8 @@
         </v-col>
         <v-col cols="12" sm="4">
           <v-card-text class="pt-2">
-            <v-btn class="mx-1 white--text" icon>
-              <v-icon color="complementary">mdi-xml</v-icon>
-            </v-btn>
-            By Ahmed Khatab
+            <v-icon color="complementary">mdi-xml</v-icon> By Ahmed Khatab
+            <div class="caption grey--text mt-1">Image by <a target="_blank" href="https://www.freepik.com/free-vector/hand-drawn-web-developers_12063795.htm#query=code&position=8&from_view=keyword">Freepik</a></div>
           </v-card-text>
         </v-col>
       </v-row>
