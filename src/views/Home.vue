@@ -23,7 +23,7 @@
 
       <!-- services and skills -->
       <section id="about">
-        <ServicesAndSkills/>
+        <ServicesAndSkills :skills="skills"/>
       </section>
       
       <!-- work experience -->
@@ -48,10 +48,28 @@
       <Contact />
     </v-container>
     <Footer />
+
+    <!-- scroll top button -->
+    <v-btn
+    ref="button"
+    fab
+    v-scroll="onScroll"
+    v-show="showScrollBtn"
+    color="complementary"
+    fixed
+    bottom
+    dark
+    right
+    @click="$vuetify.goTo(0, {duration: 500, offset: 0, easeing: easing})"
+    elevation="5"
+    >
+      <v-icon>mdi-chevron-up</v-icon>
+    </v-btn>
   </v-app>
 </template>
 
 <script>
+import * as easings from 'vuetify/lib/services/goto/easing-patterns'
 import NavBar from "../components/NavBar.vue"
 import Footer from "../components/Footer.vue"
 import TimeLine from "../components/TimeLine.vue"
@@ -70,6 +88,50 @@ export default {
     Contact
   },
   data: () => ({
+    skills: [
+      {
+        technology: 'Vue.js',
+        value: 0,
+        max: 80,
+        icon: 'mdi-vuejs',
+        color: '#00ff8b'
+      },
+      {
+        technology: 'Vuetify',
+        value: 0,
+        max: 95,
+        icon: 'mdi-vuetify',
+        color: '#67afff'
+      },
+      {
+        technology: 'Javascript',
+        value: 0,
+        max: 85,
+        icon: 'mdi-language-javascript',
+        color: '#FFA500'
+      },
+      {
+        technology: 'Bootstrap',
+        value: 0,
+        max: 95,
+        icon: 'mdi-bootstrap',
+        color: '#8951f5'
+      },
+      {
+        technology: 'CSS3',
+        value: 0,
+        max: 95,
+        icon: 'mdi-language-css3',
+        color: '#3333ff'
+      },
+      {
+        technology: 'HTML5',
+        value: 0,
+        max: 95,
+        icon: 'mdi-language-html5',
+        color: 'orange'
+      }
+    ],
     work: [
       {
         title: 'ADAM TRAVEL SERVICES',
@@ -125,9 +187,34 @@ export default {
         color: 'complementary lighten-1',
         icon: 'mdi-school'
       }
-    ]
-  })
-};
+    ],
+    easing: 'easeInOutCubic',
+    easings: Object.keys(easings),
+    showScrollBtn: false,
+    interval: null
+  }),
+  methods: {
+    onScroll (e) {
+      if (typeof window === 'undefined') return
+      const top = window.pageYOffset ||   e.target.scrollTop || 0
+      const skillsElement = document.getElementById('skills')
+      const skillsTopPosition = skillsElement.getBoundingClientRect().top
+      if (top >= skillsTopPosition && top < skillsTopPosition + window.scrollY) {
+        this.interval = setInterval(() => {
+          this.skills.forEach(el => {
+            if (el.value < el.max) {
+              el.value += 1
+            }
+          })
+        }, 50)
+      } else clearInterval(this.interval)
+      this.showScrollBtn = top > 20
+    }
+  },
+  beforeDestroy () {
+    clearInterval(this.interval)
+  }
+}
 </script>
 <style>
 .first {

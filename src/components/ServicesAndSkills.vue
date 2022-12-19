@@ -48,45 +48,6 @@
 
 <script>
 export default {
-    data: () => ({
-        skills: [
-            {
-                technology: 'Vue.js',
-                value: '80',
-                icon: 'mdi-vuejs',
-                color: '#00ff8b'
-            },
-            {
-                technology: 'Vuetify',
-                value: '95',
-                icon: 'mdi-vuetify',
-                color: '#67afff'
-            },
-            {
-                technology: 'Javascript',
-                value: '85',
-                icon: 'mdi-language-javascript',
-                color: '#FFA500'
-            },
-            {
-                technology: 'Bootstrap',
-                value: '95',
-                icon: 'mdi-bootstrap',
-                color: '#8951f5'
-            },
-            {
-                technology: 'CSS3',
-                value: '95',
-                icon: 'mdi-language-css3',
-                color: '#3333ff'
-            },
-            {
-                technology: 'HTML5',
-                value: '95',
-                icon: 'mdi-language-html5',
-                color: 'orange'
-            }
-        ],
-    })
+    props: ['skills']
 }
 </script>

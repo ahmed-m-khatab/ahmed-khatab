@@ -26,7 +26,9 @@
               <div class="mt-5">
                 <a target="_blank" href="https://www.linkedin.com/in/ahmed-khatab-3197931b8/"><v-icon color="complementary">mdi-linkedin</v-icon> Ahmed Khatab</a>
               </div>
-              
+              <div class="mt-5">
+                <a href="https://drive.google.com/file/d/1JG_B8ZhUhMKUilXpry3h74U4Fk3tm1l1/view?usp=share_link" target="_blank"><v-icon color="complementary">mdi-file-account</v-icon> My Resume</a>
+              </div>
             </v-col>
             <v-col cols="12" md="5" class="order-first order-md-2">
               <v-card color="#333" elevation="10" class="pa-5 rounded-lg">
