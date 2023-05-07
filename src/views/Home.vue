@@ -158,7 +158,7 @@ export default {
         endDate: 'Jul 2022',
         color: 'complementary',
         icon: 'mdi-laptop',
-        link: 'https://https://grouptripbeta.com/.com/'
+        link: 'https://grouptrip.adamtravel.com/auth'
       },
       {
         title: 'Ifzaani',
