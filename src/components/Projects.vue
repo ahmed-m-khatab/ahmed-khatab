@@ -33,7 +33,7 @@ export default {
             },
             {
                 name: 'Group Trip',
-                link: 'https://grouptripbeta.com/',
+                link: 'https://grouptrip.adamtravel.com/',
                 img: 'grouptrip.jpg'
             },
             {

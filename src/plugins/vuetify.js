@@ -1,13 +1,15 @@
-import '@fortawesome/fontawesome-free/css/all.css'
-import 'material-design-icons-iconfont/dist/material-design-icons.css'
-import Vue from 'vue';
-import Vuetify from 'vuetify/lib/framework';
+// import 'material-design-icons-iconfont/dist/material-design-icons.css' // Ensure you are using css-loader
+import '@mdi/font/css/materialdesignicons.css'
 
-Vue.use(Vuetify);
+import Vue from 'vue'
+import Vuetify from 'vuetify/lib'
+
+Vue.use(Vuetify)
 
 export default new Vuetify({
+    defaultAssets: false,
     icons: {
-        iconfont: 'fa' || 'md' || 'mdi'
+        iconfont: 'md'
     },
     theme: {
         themes: {
@@ -24,4 +26,4 @@ export default new Vuetify({
             }
         }
     }
-});
+})

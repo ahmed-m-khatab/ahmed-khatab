@@ -21,13 +21,13 @@
                 <a href="mailto:ahmed.khatab.m@gmail.com"><v-icon color="complementary">mdi-email</v-icon> ahmed.khatab.m@gmail.com</a>
               </div>
               <div class="mt-5">
-                <a href="tel:+201017787862"><v-icon color="complementary">mdi-phone</v-icon> (+20) 101-778-7862</a>
+                <a target="_blank" href="http://wa.me//201017787862"><v-icon color="complementary">mdi-whatsapp</v-icon> (+20) 101-778-7862</a>
               </div>
               <div class="mt-5">
                 <a target="_blank" href="https://www.linkedin.com/in/ahmed-khatab-3197931b8/"><v-icon color="complementary">mdi-linkedin</v-icon> Ahmed Khatab</a>
               </div>
               <div class="mt-5">
-                <a href="https://drive.google.com/file/d/1JG_B8ZhUhMKUilXpry3h74U4Fk3tm1l1/view?usp=share_link" target="_blank"><v-icon color="complementary">mdi-file-account</v-icon> My Resume</a>
+                <a href="https://drive.google.com/file/d/19zYUROAPeRL5AlvdoVRILleBcWhgPcZA/view?usp=sharing" target="_blank"><v-icon color="complementary">mdi-file-account</v-icon> My Resume</a>
               </div>
             </v-col>
             <v-col cols="12" md="5" class="order-first order-md-2">

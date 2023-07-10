@@ -6,15 +6,14 @@
     <nav-bar />
     <v-container fluid>
       <v-row align="center" class="py-5" id="scroll-limit">
-        <v-col cols="12" md="6">
-          <v-img src="../assets/background/bg2.jpg" contain max-height="500"></v-img>
+        <v-col cols="12" md="6" class="panner">
+          <v-img src="../assets/background/profile.jpg" contain max-height="500"></v-img>
         </v-col>
         <v-col cols="12" md="6" class="mt-10" :class="$vuetify.breakpoint.smAndDown ? 'text-center' : 'text-left'">
           <h5 class="complementary--text font-weight-bold text-h3">Hi there I'm Khatab</h5>
           <h1 class="white--text">FRONTEND DEVELOPER</h1>
           <p class="grey--text">
-            Experienced Frontend developre with over 3 years of experience in designing, building web applications. <br />
-            I'm ready to take your business to the next level with my work.
+            With over 3 years of experience in front-end development, I specialize in creating modern and responsive web applications using Vue.js and Nuxt. I have a strong understanding of JavaScript and its frameworks and HTML, CSS, and responsive design principles. My experience has allowed me to work on large-scale projects and collaborate effectively with cross-functional teams. I am comfortable working with various APIs and integrating them into web applications to create seamless user experiences. When it comes to Vue.js and Nuxt, I have enough understanding of both frameworks and their respective ecosystems. I have worked on various projects, ranging from small-scale websites to large-scale web applications, utilizing the power and flexibility of these frameworks. Overall, I am a passionate and driven front-end developer committed to delivering high-quality, user-focused web applications.
             <br />
             Feel free to reach out!
           </p>
@@ -92,9 +91,16 @@ export default {
       {
         technology: 'Vue.js',
         value: 0,
-        max: 80,
+        max: 87,
         icon: 'mdi-vuejs',
         color: '#00ff8b'
+      },
+      {
+        technology: 'Nuxt',
+        value: 0,
+        max: 50,
+        icon: 'mdi-nuxt',
+        color: '#00ff0b'
       },
       {
         technology: 'Vuetify',
@@ -158,7 +164,7 @@ export default {
         endDate: 'Jul 2022',
         color: 'complementary',
         icon: 'mdi-laptop',
-        link: 'https://grouptrip.adamtravel.com/auth'
+        link: 'https://grouptrip.adamtravel.com/'
       },
       {
         title: 'Ifzaani',
